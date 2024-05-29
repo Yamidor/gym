@@ -2,32 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  @apply bg-gray-950 text-white;
+}
+.swal2-popup {
+  width: 800px; /* Puedes ajustar este valor según tus necesidades */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.custom-popup-class {
+  width: 1240px; /* Puedes ajustar este valor según tus necesidades */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.input-style {
+  font-size: 10px; /* Tamaño de fuente para los inputs */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.img-style {
+  max-width: 100%; /* Ajustar el ancho máximo de la imagen */
+  height: auto; /* Ajustar la altura automáticamente */
 }
